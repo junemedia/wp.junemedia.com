@@ -16,7 +16,35 @@
 
 ?>
 
+<style>
+@font-face {
+  font-family: 'Pier';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Pier'), url('http://wp.junemedia.com/wp-content/themes/zerif-lite/fonts/pier-regular.otf') format('opentype');
+}
 
+
+#menu-menu-a a:link {
+    color: #FFFFFF;
+}
+
+
+#menu-menu-a a:visited {
+    color: #FFFFFF;
+}
+
+
+#menu-menu-a a:hover {
+    color: #FFB719;
+}
+
+
+#menu-menu-a a:active {
+    color: #FFFFFF;
+}
+
+</style>
 
 <footer id="footer">
 
@@ -24,24 +52,24 @@
 
 	<div class="row" style="color:#FFFFFF; padding-top:20px;">
 	
-		<div class="col-sm-3">
+		<div class="col-md-3">
 		
 			<p><a href="http://wp.junemedia.com/" class="navbar-brand"><img src="http://wp.junemedia.com/wp-content/uploads/2015/05/logo.png" alt="June Media" style="display:inline-block"></a></p>
   						
   		</div>
 
-  		<div class="col-sm-3">
+  		<div class="col-md-3">
 		
-			<ul style="list-style:none; float:left; font-size:13px">
-			  <li>Contact Us</li>
-			  <li>Careers</li>
-			  <li>Press Release</li>			  
+			<ul id="menu-menu-a" style="list-style:none; float:left; font-size:13px; font-family: 'Pier', 'sans-serif';">
+			  <li><a href="#">Contact Us</a></li>
+			  <li><a href="#">Careers</a></li>
+			  <li><a href="#">Press Release</a></li>			  
 			</ul>
 		
 		</div>	
 		
 		
-		<div class="col-sm-3">
+		<div class="col-md-3">
 		
 			<p style="font-size:13px">
 			<b>New York Office</b><br>
@@ -52,7 +80,7 @@
 		
 		</div>	
 		
-		<div class="col-sm-3" >			
+		<div class="col-md-3" >			
 
 			<p style="font-size:13px">
 			<b>Chicago Office</b><br>

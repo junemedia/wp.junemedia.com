@@ -377,7 +377,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 	if( isset($zerif_contactus_show) && $zerif_contactus_show != 1 ):
 		?>
-		<section class="contact-us" id="contact">
+		<section class="contact-us" id="contact" style="display:none;">
 			<div class="container">
 				<!-- SECTION HEADER -->
 				<div class="section-header">

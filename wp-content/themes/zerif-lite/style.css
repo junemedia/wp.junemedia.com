@@ -1374,11 +1374,12 @@ object {
 	box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
 }
 .header-content-wrap {
-	background: rgba(0, 0, 0, 0.5);
+	/*background: rgba(0, 0, 0, 0.5);*/
+	background: rgba(50, 158, 217, 0.8);
 	position: relative;
 	-webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
 	box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
-	padding: 21% 0 150px;
+	padding: 14% 0 10%;
 }
 .header_title {
     float: left;
@@ -1469,6 +1470,7 @@ object {
 	position: relative;
 	list-style:none;
 	padding:10px;
+	background-color: #272727;
 }
 .navbar-inverse .navbar-nav ul.sub-menu li a {
 	color:#404040;
@@ -1573,10 +1575,21 @@ object {
 	color: #FFF;
 	line-height: 65px;
 	z-index: 0;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	font-size: 55px;
 	float:none;
 }
+
+.intro-text_sub{
+	text-align: center;
+	color: #FFF;
+	line-height: 50px;
+	z-index: 0;
+	/*text-transform: uppercase;*/
+	font-size: 45px;
+	float:none;
+}
+
 /* Short Messages */
 .bottom-message-section {
 	margin-top: 14%;
@@ -1786,7 +1799,8 @@ object {
  **   Secction:  Separator one        -----
 -----------------------------------------*/
 .separator-one {
-	background: rgba(52, 210, 147, 0.8);
+	/*background: rgba(52, 210, 147, 0.8);*/
+	background: rgba(50, 158, 217, 0.8);
 	padding: 100px 0 100px 0;
 }
 .separator-one .green-btn {
@@ -2850,6 +2864,7 @@ article .posted-on a:hover{
 	font-size: 20px;
 	margin-top: 0;
 	padding-top: 0;
+	display:none;
 }
 .listpost-content-wrap .entry-content {
 	margin-top: 1em;
@@ -4679,4 +4694,9 @@ body.custom-background {
 
 .zerif-copyright-box {
 	width: 100%;
+}
+
+/* My BS style here */
+#logo-row div{
+	margin-bottom:1em;
 }

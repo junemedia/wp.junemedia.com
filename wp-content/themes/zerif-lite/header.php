@@ -37,6 +37,46 @@
 
 <?php wp_head(); ?>
 
+<script>
+
+var imageCount = 1;
+
+var image_a = 'http://wp.junemedia.com/wp-content/uploads/2015/05/homepage_image_b.jpg';
+var image_b = 'http://wp.junemedia.com/wp-content/uploads/2015/05/homepage_image_c.jpg';
+var image_c = 'http://wp.junemedia.com/wp-content/uploads/2015/05/homepage_image_a.jpg';
+
+function changeImage()
+{
+
+	jQuery(function($) {
+		
+		imageCount++;	
+	
+		if ( imageCount === 1 ){
+			$('body').css('background-image', 'url(' + image_a + ')');
+			//$('body').animate({background-image: 'url(' + image_a + ')'});
+		}
+		
+		if ( imageCount === 2 ){
+			$('body').css('background-image', 'url(' + image_b + ')');
+			//$('body').animate({background-image: 'url(' + image_b + ')'});
+		}
+		
+		if ( imageCount === 3 ){
+			$('body').css('background-image', 'url(' + image_c + ')');
+			//$('body').animate({background-image: 'url(' + image_c + ')'});
+			
+			imageCount = 0;
+		}
+
+	});
+	
+}
+
+setInterval("changeImage()", 10000);
+
+</script>
+
 </head>
 
 
@@ -84,11 +124,32 @@ endif; ?>
   font-weight: normal;
   src: local('Pier'), url('http://wp.junemedia.com/wp-content/themes/zerif-lite/fonts/pier-regular.otf') format('opentype');
 }
+
+
+#menu-menu-1 a:link {
+    color: #FFFFFF;
+}
+
+
+#menu-menu-1 a:visited {
+    color: #FFFFFF;
+}
+
+
+#menu-menu-1 a:hover {
+    color: #FFB719;
+}
+
+
+#menu-menu-1 a:active {
+    color: #FFFFFF;
+}
+
 </style>
 
 <header id="home" class="header">
 
-	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
+	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner" style="background-color: #272727; font-family: 'Pier', 'sans-serif'; text-transform: uppercase;">
 
 		<div class="container">
 
@@ -136,7 +197,7 @@ endif; ?>
 
 			</div>
 
-			<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation"   id="site-navigation" >
+			<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation"   id="site-navigation" style="background-color: #272727;">
 
 				<?php wp_nav_menu( array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-right responsive-nav main-nav-list', 'fallback_cb'     => 'zerif_wp_page_menu')); ?>
 

@@ -17,10 +17,17 @@ get_header(); ?>
 
 	<div id="content" class="site-content">
 
-<div class="container-fluid" style="background-image: url('http://wp.junemedia.com/wp-content/uploads/2015/05/bean.png'); background-color: #cccccc;">
-
+<div id="header_image_div" class="container-fluid" style="background-image: url('http://wp.junemedia.com/wp-content/uploads/2015/05/image_f.png'); background-color: #cccccc;">
+	
+	<?php
+		$pagename = get_query_var('pagename');
+		 if ( $pagename ){
+			//echo $pagename;
+		 }
+	?>
+	
 	<div class="row">
-		<h2 style="font-size: 80px; color:#FFFFFF; padding-top:70px; padding-bottom:70px;">Some Title Here.</h2>
+		<h2 style="font-size: 3.5em; color:#FFFFFF; padding-top:70px; padding-bottom:70px;">Content that inspires.</h2>
 	</div>
 
 </div>
